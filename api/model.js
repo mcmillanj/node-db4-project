@@ -22,7 +22,7 @@ const config = require('../knexfile')
         recipe_id: rows[0].recipe_id,
         recipe_name: rows[0].recipe_name,
         created_at: rows[0].post_time,
-        steps: []
+        steps:[]
     }
     rows.forEach(row => {
         if(row.step_id){
